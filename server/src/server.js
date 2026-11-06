@@ -2,8 +2,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import app from './app.js';
+import { connectDB, disconnectDB } from './config/db.js';
 
 const PORT = process.env.PORT || 5000;
+
+// Connect to MongoDB (non-blocking for server initialization)
+connectDB();
 
 const server = app.listen(PORT, () => {
   console.log(`===============================================`);
@@ -15,8 +19,9 @@ const server = app.listen(PORT, () => {
 });
 
 // Graceful shutdown handling
-const shutdown = (signal) => {
+const shutdown = async (signal) => {
   console.log(`\nReceived ${signal}. Shutting down gracefully...`);
+  await disconnectDB();
   server.close(() => {
     console.log('HTTP server closed.');
     process.exit(0);
