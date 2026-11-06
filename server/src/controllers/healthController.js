@@ -9,3 +9,4 @@ export const getHealth = (req, res) => {
     message: "Hostel and PG Finder API is running",
   });
 };
+

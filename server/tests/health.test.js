@@ -28,3 +28,4 @@ describe('API Health Check Endpoint', () => {
     assert.match(response.body.message, /Resource not found/);
   });
 });
+

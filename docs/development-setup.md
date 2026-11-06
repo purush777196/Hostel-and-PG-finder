@@ -177,3 +177,4 @@ Production assets are generated in `client/dist/`.
 | `EADDRINUSE: port 5000` | Port 5000 is occupied by another process | Kill the process or change `PORT` in `server/.env` |
 | `CORS Error in Browser` | `CLIENT_URL` does not match frontend origin | Check `CLIENT_URL` in `server/.env` matches `http://localhost:5173` |
 | `MongoDB Connection Failed` | Local MongoDB daemon is not running | Non-fatal for Phase 0. Start MongoDB service or provide a valid Atlas URI |
+

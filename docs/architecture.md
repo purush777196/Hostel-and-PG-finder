@@ -114,3 +114,4 @@ sequenceDiagram
 - **Helmet Security Headers**: Protection against XSS, clickjacking, and MIME-sniffing.
 - **Environment Isolation**: `.env` files strictly gitignored; configuration supplied via `.env.example` templates.
 - **Zero Hardcoded Secrets**: MongoDB connection strings and port configurations are externalized.
+

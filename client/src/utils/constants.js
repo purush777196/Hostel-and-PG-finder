@@ -50,3 +50,4 @@ export const ROADMAP_PHASES = [
     description: 'Room reservations, visit scheduling, owner contact system, and automated notifications.',
   },
 ];
+

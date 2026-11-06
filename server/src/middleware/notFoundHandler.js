@@ -8,3 +8,4 @@ export const notFoundHandler = (req, res, next) => {
     message: `Resource not found: ${req.method} ${req.originalUrl}`,
   });
 };
+
